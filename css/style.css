@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Allison:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+:root {
+    --font-1: "Allison", cursive;
+    --font-2: "Inter", sans-serif;
+    --font-3: "Roboto", sans-serif;
+
+    --v-color-1: hsla(37, 95%, 57%, 1);
+    --v-color-2: hsla(194, 89%, 26%, 1);
+    --v-color-dark:#222D32;
+    --v-color-light:#EEEEEE;
+    --v-color-white:#FFFFFF;
+    --v-color-black:#000000;
+}
+
+[data-theme="dark"] {
+    --font-1: "Allison", cursive;
+    --font-2: "Inter", sans-serif;
+    --font-3: "Roboto", sans-serif;
+
+    --v-color-1: hsla(37, 95%, 57%, 1);
+    --v-color-2: hsla(194, 89%, 26%, 1);
+    --v-color-dark:#EEEEEE;
+    --v-color-light:#222D32;
+    --v-color-white:#000000;
+    --v-color-black:#FFFFFF;
+}
+html {
+    font-family: var(--font-3);
+    font-size: calc(15px + (15 - 13) * ((100vw - 300px) / (1920 - 300))) ;
+}
+p{
+    font-size: calc(15px + (15 - 13) * ((100vw - 300px) / (1920 - 300))) ;
+    line-height: 2;
+}
+a{
+    font-size: calc(15px + (15 - 13) * ((100vw - 300px) / (1920 - 300))) ;
+}
+h1{
+    font-size: calc(30px + (30 - 25) * ((100vw - 300px) / (1920 - 300))) ;
+}
+h2{
+    font-size: calc(25px + (25 - 20) * ((100vw - 300px) / (1920 - 300))) ;
+}
+h3{
+    font-size: calc(20px + (20 - 15) * ((100vw - 300px) / (1920 - 300))) ;
+}
+.font-alison{
+    font-family: var(--font-1);
+}
+.font-inter{
+    font-family: var(--font2);
+}
+body {
+    background: var(--v-color-light);
+    color: var(--v-color-dark);
+}
+
+body.dark-mode{
+    background: var(--v-color-dark);
+    color: var(--v-color-light);
+}
+.v-bg-dark{
+    background: var(--v-color-dark);
+}
+.v-bg-light{
+    background:var(--v-color-light);
+}
+.v-color-link{
+    color: var(--v-color-1);
+}
+.v-color-title{
+    color: var(--v-color-2);
+}
+.v-text-color{
+    color: var(--v-color-white);
+}
+.v-bg-filter {
+    background: rgba(0, 0, 0, .6);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+.v-nav-link{
+    color: var(--v-color-white);
+}
+.active{
+    color: var(--v-color-1) !important;
+}
+.v-nav-link:hover{
+    color: var(--v-color-1) !important;
+}
+.card-link{
+    text-decoration: none;
+    color: unset;
+}
+.card-link:hover{
+    box-shadow:#222D32 10px 10px 10px
+}
+.v-divider{
+    background-color: var(--v-color-light);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 1px;
+    opacity: 0.5;
+}
+.v-divider span {
+    display: block;
+    width: 165px;
+    height: 5px;
+    background-color: var(--v-color-2);
+}
+.v-bg-highlight{
+    background: rgb(7 98 125 / 10%);
+}
+.v-nav-item{
+    padding: 0 10px;
+    font-size: 20px;
+    
+}
+.v-nav-item a{
+    color: #EEEEEE;
+}
+.carousel-item img{
+    opacity: 0.8;
+}
