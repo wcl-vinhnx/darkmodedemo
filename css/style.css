@@ -123,3 +123,6 @@ body.dark-mode{
 .carousel-item img{
     opacity: 0.8;
 }
+.page-title{
+    background: url('../images/2.jpg');
+}
